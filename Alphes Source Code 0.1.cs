@@ -160,4 +160,7 @@ static void CheckOut()
         Console.WriteLine("This amount {0} is missing", calculate_missing);
     }
         Console.WriteLine("Thank you for your order!");
+        totalQuantity = 0;
+        totalPrice = 0;
+        selectedToppings.Clear();
 }
