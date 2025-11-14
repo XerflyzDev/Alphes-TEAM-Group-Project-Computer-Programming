@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-
 class Program
 {
     static List<string> selectedToppings = new List<string>();
