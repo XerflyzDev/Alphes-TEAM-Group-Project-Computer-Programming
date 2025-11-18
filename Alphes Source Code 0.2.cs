@@ -27,7 +27,7 @@ namespace Alphes_Project_0._2
                 Console.WriteLine("[1] Select Orders");
                 Console.WriteLine("[2] Cart");
                 Console.WriteLine("[3] CheckOut");
-                Console.WriteLine("[4] Exit");
+                Console.WriteLine("[4] Cancel");
                 Console.Write("Select Menu : ");
                 int select = Convert.ToInt32(Console.ReadLine());
 
@@ -36,6 +36,7 @@ namespace Alphes_Project_0._2
                     case 1: AddOders(); break;
                     case 2: ShowCart(); break;
                     case 3: CheckOut(); break;
+                    case 4: Cancel(); break;
                     default:
                         Console.WriteLine("Please select 1-4 only.");
                         Console.WriteLine("(Press Enter to continue)");
@@ -227,6 +228,11 @@ namespace Alphes_Project_0._2
             Console.WriteLine("( Press Enter to continue )");
             Console.ReadLine();
 
+            allOrders.Clear();
+        }
+        static void Cancel()
+        {
+            Console.WriteLine("<--------- Order Has Been Cancel -------->");
             allOrders.Clear();
         }
     }
