@@ -232,7 +232,7 @@ namespace Alphes_Project_0._2
         }
         static void Cancel()
         {
-            Console.WriteLine("<--------- Order Has Been Cancel -------->");
+            Console.WriteLine("<--------- Order Has Been Cancelled -------->");
             allOrders.Clear();
         }
     }
