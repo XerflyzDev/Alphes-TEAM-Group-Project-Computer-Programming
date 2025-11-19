@@ -233,6 +233,8 @@ namespace Alphes_Project_0._2
         static void Cancel()
         {
             Console.WriteLine("<--------- Order Has Been Cancelled -------->");
+            Console.WriteLine("( Press Enter to continue )");
+            Console.ReadLine();
             allOrders.Clear();
         }
     }
