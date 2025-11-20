@@ -283,11 +283,22 @@ namespace Alphes_Project_0._3
 
         static void Cancel()
         {
-            Console.WriteLine("<--------- Order Has Been Cancelled -------->");
-            Array.Clear(allOrders, 0, allOrders.Length);
-            orderCount = 0;
-            Console.WriteLine("( Press Enter to continue )");
-            Console.ReadLine();
+            Console.Clear();
+            if (orderCount > 0)
+            {
+                Console.WriteLine("<--------- Order Has Been Cancelled -------->");
+                Array.Clear(allOrders, 0, allOrders.Length);
+                orderCount = 0;
+                Console.WriteLine("( Press Enter to continue )");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("You Haven't Orderred Yet!");
+                Console.WriteLine("( Press Enter to continue )");
+                Console.ReadLine();
+                return;
+            }
         }
     }
 }
